@@ -3,16 +3,16 @@ import ProjectCard from "../components/ProjectCard";
 
 export default function Home() {
   const projects = [
-    { id: 1, title: "Robotics Arm", description: "PID-controlled robotic arm with ROS.", href: "/projects/robotic-arm" },
-    { id: 2, title: "Simulation Dashboard", description: "React dashboard for FEA visualization.", href: "/projects/sim-dashboard" }
+    { id: 1, title: "Project 1", description: "Project desc 1", href: "/projects/project1" },
+    { id: 2, title: "Project 2", description: "Project desc 2", href: "/projects/project2" }
   ];
 
   return (
     <section>
       <header className="mb-12">
-        <h1 className="text-5xl font-extrabold">Hi, I’m <span className="text-sky-600">Your Name</span>.</h1>
+        <h1 className="text-5xl font-extrabold">Hi, I’m <span className="text-sky-600">Ethan</span>.</h1>
         <p className="mt-4 text-lg text-gray-700 max-w-2xl">
-          I design and build mechanical systems and web tools. I’m currently studying Mechanical Engineering.
+          I'm a Mechanical Engineer / Software Engineer exploring thermofluidics while bridging mechanical engineering, programming, and research.
         </p>
         <div className="mt-6">
           <Link href="/projects" className="inline-block px-4 py-2 bg-sky-600 text-white rounded-md">View projects</Link>
@@ -24,6 +24,16 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {projects.map(p => <ProjectCard key={p.id} title={p.title} description={p.description} href={p.href} />)}
         </div>
+      </section>
+
+      <section>
+      <Link
+        href="/resume"
+        className="px-4 py-2 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition"
+      >
+        View Resume
+      </Link>
+      
       </section>
     </section>
   );

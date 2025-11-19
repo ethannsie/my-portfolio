@@ -2,8 +2,8 @@ import "./globals.css";
 import Nav from "../components/Nav";
 
 export const metadata = {
-  title: "My Portfolio",
-  description: "Portfolio built with Next.js + Tailwind"
+  title: "Portfolio - Ethan Sie",
+  description: "Portfolio for Ethan Sie"
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -15,7 +15,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <main className="flex-1 container mx-auto px-6 py-10">{children}</main>
           <footer className="mt-12 py-8 border-t">
             <div className="container mx-auto px-6 text-center text-sm text-gray-600">
-              © {new Date().getFullYear()} Your Name
+              © {new Date().getFullYear()} Ethan Sie
             </div>
           </footer>
         </div>

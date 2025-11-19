@@ -2,7 +2,7 @@ export default function About() {
   return (
     <div className="prose max-w-none">
       <h1>About Me</h1>
-      <p>I am a mechanical engineering student interested in robotics and product design.</p>
+      <p>My name is Ethan, and I'm currently pursuing a B.S. in Mechanical Engineering and Eletrical Engineering & Computer Science at the University of California, Berkeley.</p>
     </div>
   );
 }

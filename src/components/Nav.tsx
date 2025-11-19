@@ -4,12 +4,12 @@ export default function Nav() {
   return (
     <nav className="w-full border-b">
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
-        <Link href="/" className="text-lg font-semibold">Your Name</Link>
+        <Link href="/" className="text-lg font-semibold">Ethan Sie</Link>
 
         <div className="space-x-6 hidden md:block">
           <Link href="/projects" className="hover:text-sky-600">Projects</Link>
           <Link href="/about" className="hover:text-sky-600">About</Link>
-          <a href="#contact" className="hover:text-sky-600">Contact</a>
+          <a href="#contact" className="hover:text-sky-600">Contact</a> 
         </div>
 
         <div className="md:hidden">
