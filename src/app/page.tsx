@@ -3,8 +3,8 @@ import ProjectCard from "../components/ProjectCard";
 
 export default function Home() {
   const projects = [
-    { id: 1, title: "Project 1", description: "Project desc 1", href: "/projects/project1.tsx" },
-    { id: 2, title: "Project 2", description: "Project desc 2", href: "/projects/project2.tsx" }
+    { id: 1, title: "Project 1", description: "Project desc 1", href: "/projects/circuitBuilder" },
+    { id: 2, title: "Project 2", description: "Project desc 2", href: "/projects/circuitBuilder" }
   ];
 
   return (
