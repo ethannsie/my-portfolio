@@ -7,7 +7,7 @@ export default function ProjectsPage() {
       description:
         "An interactive GlowScript/VPython simulation for building and testing circuits.",
       href: "/projects/circuitBuilder",
-      iframe: "/circuitBuilder.html",
+      iframe: "/projects/circuitBuilder/circuitBuilder.html",
     },
     {
       title: "Markov Chain based Generative Music",
