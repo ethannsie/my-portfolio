@@ -3,7 +3,7 @@ import ProjectCard from "../../components/ProjectCard";
 export default function ProjectsPage() {
   const projects = [
     {
-      title: "Circuit Builder Simulation",
+      title: "Physics Circuit Builder Simulation",
       description:
         "An interactive GlowScript/VPython simulation for building and testing circuits.",
       href: "/projects/circuitBuilder",

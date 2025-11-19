@@ -1,5 +1,6 @@
 import Link from "next/link";
 import ProjectCard from "../components/ProjectCard";
+import Image from "next/image";
 
 export default function Home() {
   const projects = [
@@ -14,6 +15,13 @@ export default function Home() {
         <p className="mt-4 text-lg text-gray-700 max-w-2xl">
           I'm a Mechanical Engineer / Software Engineer exploring thermofluidics while bridging mechanical engineering, programming, and research.
         </p>
+        <Image
+          src="/images/main.HEIC"
+          width={400}
+          height={400}
+          alt="Ethan Headshot"
+          className="rounded-xl"
+        />
         <div className="mt-6">
           <Link href="/projects" className="inline-block px-4 py-2 bg-sky-600 text-white rounded-md">View projects</Link>
         </div>
