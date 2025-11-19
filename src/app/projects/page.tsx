@@ -6,7 +6,7 @@ export default function ProjectsPage() {
       title: "Circuit Builder Simulation",
       description:
         "An interactive GlowScript/VPython simulation for building and testing circuits.",
-      href: "/projects/circuit-builder",
+      href: "/projects/circuitBuilder",
       iframe: "/circuitBuilder.html",
     },
     {
