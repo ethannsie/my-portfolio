@@ -16,7 +16,7 @@ export default function Home() {
           I'm a Mechanical Engineer / Software Engineer exploring thermofluidics while bridging mechanical engineering, programming, and research.
         </p>
         <Image
-          src="/images/main.HEIC"
+          src="/images/main.png"
           width={400}
           height={400}
           alt="Ethan Headshot"
