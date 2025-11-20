@@ -52,13 +52,11 @@ export default function Home() {
           </Link>
 
           <Link
-          href="/resume"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="px-4 py-2 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition"
-        >
-          View Resume
-        </Link>
+            href="/resume"
+            className="px-6 py-3 border border-sky-600 text-sky-600 rounded-lg text-lg font-medium hover:bg-sky-50 transition-all hover:-translate-y-1 hover:shadow-xl"
+          >
+            View Resume
+          </Link>
         </motion.div>
       </motion.div>
     </section>
