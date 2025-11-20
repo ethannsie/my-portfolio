@@ -48,15 +48,29 @@ export default function Home() {
             href="/projects"
             className="px-6 py-3 bg-sky-600 text-white rounded-lg text-lg font-medium hover:bg-sky-700 transition-all hover:-translate-y-1 hover:shadow-xl"
           >
-            View Projects
+            Projects
           </Link>
 
           <Link
             href="/resume"
             className="px-6 py-3 border border-sky-600 text-sky-600 rounded-lg text-lg font-medium hover:bg-sky-50 transition-all hover:-translate-y-1 hover:shadow-xl"
           >
-            View Resume
+            Resume
           </Link>
+
+          <Link
+          href="https://www.linkedin.com/in/ethansie/"
+          className="px-6 py-3 border border-sky-600 text-sky-600 rounded-lg text-lg font-medium hover:bg-sky-50 transition-all hover:-translate-y-1 hover:shadow-xl"
+          >
+            Linkedin
+          </Link>
+          <Link
+          href="https://github.com/ethannsie"
+          className="px-6 py-3 border border-sky-600 text-sky-600 rounded-lg text-lg font-medium hover:bg-sky-50 transition-all hover:-translate-y-1 hover:shadow-xl"
+          >
+          Github
+          </Link>
+
         </motion.div>
       </motion.div>
     </section>
