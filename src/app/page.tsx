@@ -1,6 +1,5 @@
 "use client";
 
-import BlueprintGrid from "../components/AnimatedGrid";
 import { motion } from "framer-motion";
 import Link from "next/link";
 

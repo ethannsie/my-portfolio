@@ -5,7 +5,7 @@
 html, body, #__next { height: 100%; }
 
 html {
-  font-family: "Stack Sans Text", sans-serif;
+  font-family: var(--font-karla), sans-serif;
 }
 
 body {
