@@ -6,7 +6,7 @@ html, body, #__next { height: 100%; }
 
 html {
   font-family: var(--font-karla), sans-serif;
-  font-size: clamp(14px, 1.2vw, 200px);
+  font-size: clamp(40x, 1.2vw, 200px);
 }
 
 body {

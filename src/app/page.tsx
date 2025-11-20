@@ -12,7 +12,7 @@ export default function Home() {
 
         {/* Name */}
         <motion.h1
-          className="text-[clamp(10rem,4vw,30rem)] font-extrabold tracking-tight text-white drop-shadow-[0_0_6px_rgba(0,255,255,0.3)]"
+          className="text-[clamp(10rem,4vw,20rem)] font-bold tracking-tight text-white drop-shadow-[0_0_6px_rgba(0,255,255,0.3)]"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.0 }}
@@ -28,7 +28,7 @@ export default function Home() {
           transition={{ delay: 0.3, duration: 1 }}
         >
           <div className="text-3xl">
-          Mechanical Engineer × Software Engineer  
+          Mechanical Engineer     ×     Software Engineer  
           </div>
           <br />
           Bridging high-precision engineering with computational design.
@@ -51,12 +51,12 @@ export default function Home() {
           </Link>
 
           <a
-            href="/resume.pdf"
+            href="/research"
             target="_blank"
             className="px-6 py-3 border border-brand-orange text-brand-orange rounded-lg text-lg font-semibold 
                        hover:bg-brand-white hover:text-black transition-all hover:-translate-y-1 hover:shadow-xl"
           >
-            View Resume
+            View Research
           </a>
 
           <a

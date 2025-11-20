@@ -20,7 +20,7 @@ export default function Nav() {
     <nav
       className={`
         fixed top-0 left-0 right-0 z-50 transition-colors duration-300 
-        ${scrolled ? "bg-brand-navy_blue/50 backdrop-blur-md shadow-md" : "bg-brand-navy_blue"}
+        ${scrolled ? "bg-black backdrop-blur-md shadow-md text-brand-navy_blue" : "bg-brand-navy_blue"}
       `}
     >
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
@@ -54,11 +54,11 @@ export default function Nav() {
 
         {/* NAV LINKS */}
         <div className="space-x-6 hidden md:block">
-          <Link href="/projects" className="hover:text-sky-600 text-brand-white">Projects</Link>
-          <Link href="/competitions" className="hover:text-sky-600 text-brand-white">Competitions</Link>
-          <Link href="/about" className="hover:text-sky-600 text-brand-white">About</Link>
-          <Link href="/resume" className="hover:text-sky-600 text-brand-white">Resume</Link>
-          <a href="#contact" className="hover:text-sky-600 text-brand-white">Contact</a>
+          <Link href="/projects" className="hover:text-brand-light_blue text-brand-white">Projects</Link>
+          <Link href="/competitions" className="hover:text-brand-light_blue text-brand-white">Competitions</Link>
+          <Link href="/about" className="hover:text-brand-light_blue text-brand-white">About</Link>
+          <Link href="/resume" className="hover:text-brand-light_blue text-brand-white">Resume</Link>
+          <a href="#contact" className="hover:text-brand-light_blue text-brand-white">Contact</a>
         </div>
 
         {/* MOBILE MENU */}

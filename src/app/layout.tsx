@@ -6,7 +6,7 @@ import { Karla, Spectral, Inter } from 'next/font/google';
 
 const karla = Karla({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"], // optional, add the weights you need
+  weight: ["200", "300","400", "500", "600", "700"], // optional, add the weights you need
   variable: "--font-karla",
 });
 
@@ -30,13 +30,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={karla.variable}>
       <body className="font-sans">
-        <div className="min-h-screen flex flex-col py-10">
+        <div className="min-h-screen flex flex-col">
           <Nav />
 
 
           <main>{children}</main>
-          
-
           <Footer />
         </div>
       </body>
