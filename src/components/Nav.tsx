@@ -8,7 +8,9 @@ export default function Nav() {
 
         <div className="space-x-6 hidden md:block">
           <Link href="/projects" className="hover:text-sky-600">Projects</Link>
+          <Link href="/competitions" className="hover:text-sky-600"> Competitions</Link>
           <Link href="/about" className="hover:text-sky-600">About</Link>
+          <Link href="/resume" target="_blank" rel="noopener noreferrer" className="hover:text-sky-600"> Resume</Link>
           <a href="#contact" className="hover:text-sky-600">Contact</a> 
         </div>
 
