@@ -4,6 +4,10 @@
 
 html, body, #__next { height: 100%; }
 
+html {
+  font-family: "Stack Sans Text", sans-serif;
+}
+
 body {
   @apply bg-white text-slate-900 antialiased;
 }

@@ -1,78 +1,76 @@
 "use client";
 
-import AnimatedGrid from "../components/AnimatedGrid";
+import BlueprintGrid from "../components/AnimatedGrid";
 import { motion } from "framer-motion";
-import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
   return (
-    <section className="relative min-h-screen w-full flex items-center justify-center overflow-hidden pt-20">
-      <AnimatedGrid />
+    <section className="relative min-h-screen w-full overflow-hidden flex items-center justify-center bg-brand-navy_blue">
 
-      <motion.div
-        initial={{ opacity: 0, y: 40 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1.0, ease: "easeOut" }}
-        className="relative z-10 text-center px-6"
-      >
+      {/* HERO CONTENT — centered */}
+      <div className="relative z-10 flex flex-col items-center text-center px-6">
+
+        {/* Name */}
         <motion.h1
-          initial={{ opacity: 0, scale: 0.95 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ delay: 0.2, duration: 0.8 }}
-          className="text-7xl font-extrabold tracking-tight"
+          className="text-8xl font-extrabold tracking-tight text-white drop-shadow-[0_0_6px_rgba(0,255,255,0.3)]"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.0 }}
         >
-          ETHAN{" "}
-          <span className="text-sky-600">
-            SIE
-          </span>
+          ETHAN SIE
         </motion.h1>
 
-        <motion.p
+        {/* Tagline */}
+        <motion.div
+          className="mt-6 text-xl text-brand-orange max-w-2xl"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 0.5, duration: 0.8 }}
-          className="mt-6 text-xl text-gray-700 max-w-2xl mx-auto"
+          transition={{ delay: 0.3, duration: 1 }}
         >
+          <div className="text-3xl">
           Mechanical Engineer × Software Engineer  
-        </motion.p>
+          </div>
+          <br />
+          Bridging high-precision engineering with computational design.
+        </motion.div>
+
 
         {/* CTA Buttons */}
         <motion.div
+          className="mt-10 flex gap-6"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.8, duration: 0.8 }}
-          className="mt-10 flex justify-center gap-6"
+          transition={{ delay: 0.8, duration: 0.9 }}
         >
           <Link
             href="/projects"
-            className="px-6 py-3 bg-sky-600 text-white rounded-lg text-lg font-medium hover:bg-sky-700 transition-all hover:-translate-y-1 hover:shadow-xl"
+            className="px-6 py-3 border border-brand-orange text-brand-orange rounded-lg text-lg font-semibold 
+                       hover:bg-brand-white hover:text-black transition-all hover:-translate-y-1 hover:shadow-xl"
           >
-            Projects
+            View Projects
           </Link>
 
-          <Link
-            href="/resume"
-            className="px-6 py-3 border border-sky-600 text-sky-600 rounded-lg text-lg font-medium hover:bg-sky-50 transition-all hover:-translate-y-1 hover:shadow-xl"
+          <a
+            href="/resume.pdf"
+            target="_blank"
+            className="px-6 py-3 border border-brand-orange text-brand-orange rounded-lg text-lg font-semibold 
+                       hover:bg-brand-white hover:text-black transition-all hover:-translate-y-1 hover:shadow-xl"
           >
-            Resume
-          </Link>
+            View Resume
+          </a>
 
-          <Link
-          href="https://www.linkedin.com/in/ethansie/"
-          className="px-6 py-3 border border-sky-600 text-sky-600 rounded-lg text-lg font-medium hover:bg-sky-50 transition-all hover:-translate-y-1 hover:shadow-xl"
+          <a
+            href="/competitions"
+            target="_blank"
+            className="px-6 py-3 border border-brand-orange text-brand-orange rounded-lg text-lg font-semibold 
+                       hover:bg-brand-white hover:text-black transition-all hover:-translate-y-1 hover:shadow-xl"
           >
-            Linkedin
-          </Link>
-          <Link
-          href="https://github.com/ethannsie"
-          className="px-6 py-3 border border-sky-600 text-sky-600 rounded-lg text-lg font-medium hover:bg-sky-50 transition-all hover:-translate-y-1 hover:shadow-xl"
-          >
-          Github
-          </Link>
-
+            View Competitions
+          </a>
         </motion.div>
-      </motion.div>
+      </div>
+
     </section>
   );
 }
