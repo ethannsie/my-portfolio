@@ -1,4 +1,6 @@
-import AnimatedGrid from "@/components/AnimatedGrid";
+"use client";
+
+import AnimatedGrid from "../components/AnimatedGrid";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
