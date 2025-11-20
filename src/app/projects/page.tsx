@@ -1,7 +1,6 @@
 "use client";
 
 import AnimatedProjectCard from "../../components/AnimatedProjectCard";
-import SectionDivider from "../../components/SectionDivider";
 import { motion } from "framer-motion";
 
 export default function ProjectsPage() {
@@ -15,8 +14,8 @@ export default function ProjectsPage() {
     {
       title: "Markov Chain Generative Music",
       description: "A stochastic generative music engine based on probability matrices.",
-      href: "/projects/robotic-arm",
-      image: "/images/projects/markov.png",
+      href: "/projects/markovMusic",
+      image: "/images/projects/markov/markov4.png",
     },
     {
       title: "FEA Simulation Dashboard",
@@ -27,27 +26,16 @@ export default function ProjectsPage() {
   ];
 
   return (
-    <div className="px-6 py-20">
+    <div className="px-6 py-20 bg-brand-navy_blue">
       {/* Title Animation */}
       <motion.h1
-        className="text-4xl font-extrabold text-center mb-4"
+        className="text-8xl font-extrabold text-center mb-4 text-brand-white"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.9 }}
       >
         Projects
       </motion.h1>
-
-      <motion.p
-        className="text-center text-gray-600 max-w-xl mx-auto mb-12"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.3, duration: 0.9 }}
-      >
-        A selection of engineering and software projects I’ve built.
-      </motion.p>
-
-      <SectionDivider />
 
       {/* Project Cards Grid */}
       <motion.div

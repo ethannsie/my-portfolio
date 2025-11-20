@@ -56,6 +56,7 @@ export default function Nav() {
         <div className="space-x-6 hidden md:block">
           <Link href="/projects" className="hover:text-brand-light_blue text-brand-white">Projects</Link>
           <Link href="/competitions" className="hover:text-brand-light_blue text-brand-white">Competitions</Link>
+          <Link href="/research" className="hover:text-brand-light_blue text-brand-white">Research</Link>
           <Link href="/about" className="hover:text-brand-light_blue text-brand-white">About</Link>
           <Link href="/resume" className="hover:text-brand-light_blue text-brand-white">Resume</Link>
           <a href="#contact" className="hover:text-brand-light_blue text-brand-white">Contact</a>

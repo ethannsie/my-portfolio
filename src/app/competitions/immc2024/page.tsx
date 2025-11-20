@@ -1,11 +1,29 @@
-export default function CircuitBuilder() {
+import TemplatePage from "../../../components/TemplatePage";
+
+export default function IMMC2024() {
   return (
-    <div className="w-full h-screen">
-      <iframe
-        src="/circuitBuilder.html"
-        className="w-full h-full border-0"
-        title="Circuit Builder"
-      />
-    </div>
+    <TemplatePage
+      title="Title"
+      subtitle="Description"
+      timeline="Start – End"
+      contributors={["Ethan Sie"]}
+      techStack={["skills"]}
+      description={`
+This blah blah blah
+
+Features:
+- blah
+- blah
+- blah
+
+This was blah blah
+      `}
+      images={[
+        ""
+      ]}
+      githubUrl=""
+      demoUrl=""
+      videoUrl=""
+    />
   );
 }

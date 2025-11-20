@@ -1,53 +1,41 @@
 "use client";
 
 import AnimatedProjectCard from "../../components/AnimatedProjectCard";
-import SectionDivider from "../../components/SectionDivider";
 import { motion } from "framer-motion";
 
-export default function ProjectsPage() {
+export default function CompetitionsPage() {
   const projects = [
     {
-      title: "Circuit Builder Simulation",
-      description: "Interactive GlowScript/VPython environment for circuit logic.",
-      href: "/projects/circuitBuilder",
+      title: "Mathematical Contest in Modeling | 2025",
+      description: "International Winner (Top ~20 out of ~21,000 undergraduates); MAA Award",
+      href: "/competitions/mmc2025",
       image: "/images/projects/circuitBuilder.png",
     },
     {
-      title: "Markov Chain Generative Music",
-      description: "A stochastic generative music engine based on probability matrices.",
-      href: "/projects/robotic-arm",
-      image: "/images/projects/markov.png",
+      title: "International Mathematical Modeling Challenge | 2025",
+      description: "Top 3 in the United States",
+      href: "/competitions/immc2025",
+      image: "/images/projects/markov/markov4.png",
     },
     {
-      title: "FEA Simulation Dashboard",
-      description: "A dashboard visualizing deformation modes and stresses using Three.js.",
-      href: "/projects/fea-dashboard",
+      title: "International Mathematical Modeling Challenge | 2024",
+      description: "International Honorable Mention | Top 2 in the United States",
+      href: "/competitions/immc2024",
       image: "/images/projects/fea.png",
     },
   ];
 
   return (
-    <div className="px-6 py-20">
+    <div className="px-6 py-20 bg-brand-navy_blue">
       {/* Title Animation */}
       <motion.h1
-        className="text-4xl font-extrabold text-center mb-4"
+        className="text-8xl font-extrabold text-center mb-4 text-brand-white"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.9 }}
       >
-        Projects
+        Competitions
       </motion.h1>
-
-      <motion.p
-        className="text-center text-gray-600 max-w-xl mx-auto mb-12"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.3, duration: 0.9 }}
-      >
-        A selection of engineering and software projects I’ve built.
-      </motion.p>
-
-      <SectionDivider />
 
       {/* Project Cards Grid */}
       <motion.div
