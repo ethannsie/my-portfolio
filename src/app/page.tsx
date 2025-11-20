@@ -1,48 +1,62 @@
-import Link from "next/link";
-import ProjectCard from "../components/ProjectCard";
+import AnimatedGrid from "@/components/AnimatedGrid";
+import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
-  const projects = [
-    { id: 1, title: "Project 1", description: "Project desc 1", href: "/projects/circuitBuilder" },
-    { id: 2, title: "Project 2", description: "Project desc 2", href: "/projects/circuitBuilder" }
-  ];
-
   return (
-    <section>
-      <header className="mb-12">
-        <h1 className="text-5xl font-extrabold">Hi, I’m <span className="text-sky-600">Ethan</span>.</h1>
-        <p className="mt-4 text-lg text-gray-700 max-w-2xl">
-          I'm a Mechanical Engineer / Software Engineer exploring thermofluidics while bridging mechanical engineering, programming, and research.
-        </p>
-        <Image
-          src="/images/main.png"
-          width={400}
-          height={400}
-          alt="Ethan Headshot"
-          className="rounded-xl"
-        />
-        <div className="mt-6">
-          <Link href="/projects" className="inline-block px-4 py-2 bg-sky-600 text-white rounded-md">View projects</Link>
-        </div>
-      </header>
+    <section className="relative min-h-screen w-full flex items-center justify-center overflow-hidden">
+      <AnimatedGrid />
 
-      <section>
-        <h2 className="text-2xl font-semibold mb-6">Featured projects</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {projects.map(p => <ProjectCard key={p.id} title={p.title} description={p.description} href={p.href} />)}
-        </div>
-      </section>
-
-      <section>
-      <Link
-        href="/resume"
-        className="px-4 py-2 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition"
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.0, ease: "easeOut" }}
+        className="relative z-10 text-center px-6"
       >
-        View Resume
-      </Link>
+        <motion.h1
+          initial={{ opacity: 0, scale: 0.95 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ delay: 0.2, duration: 0.8 }}
+          className="text-7xl font-extrabold tracking-tight"
+        >
+          ETHAN{" "}
+          <span className="text-sky-600">
+            SIE
+          </span>
+        </motion.h1>
 
-      </section>
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.5, duration: 0.8 }}
+          className="mt-6 text-xl text-gray-700 max-w-2xl mx-auto"
+        >
+          Mechanical Engineer × Software Engineer  
+        </motion.p>
+
+        {/* CTA Buttons */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.8, duration: 0.8 }}
+          className="mt-10 flex justify-center gap-6"
+        >
+          <Link
+            href="/projects"
+            className="px-6 py-3 bg-sky-600 text-white rounded-lg text-lg font-medium hover:bg-sky-700 transition-all hover:-translate-y-1 hover:shadow-xl"
+          >
+            View Projects
+          </Link>
+
+          <Link
+            href="/resume"
+            className="px-6 py-3 border border-sky-600 text-sky-600 rounded-lg text-lg font-medium hover:bg-sky-50 transition-all hover:-translate-y-1 hover:shadow-xl"
+          >
+            View Resume
+          </Link>
+        </motion.div>
+      </motion.div>
     </section>
   );
 }
