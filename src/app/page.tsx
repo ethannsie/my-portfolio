@@ -12,7 +12,7 @@ export default function Home() {
 
         {/* Name */}
         <motion.h1
-          className="text-8xl font-extrabold tracking-tight text-white drop-shadow-[0_0_6px_rgba(0,255,255,0.3)]"
+          className="text-[clamp(10rem,4vw,30rem)] font-extrabold tracking-tight text-white drop-shadow-[0_0_6px_rgba(0,255,255,0.3)]"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.0 }}
@@ -22,7 +22,7 @@ export default function Home() {
 
         {/* Tagline */}
         <motion.div
-          className="mt-6 text-xl text-brand-orange max-w-2xl"
+          className="text-xl text-brand-orange max-w-2xl"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3, duration: 1 }}

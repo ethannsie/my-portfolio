@@ -3,9 +3,10 @@ import Nav from "../components/Nav";
 import Footer from "../components/Footer"
 import { Karla, Spectral, Inter } from 'next/font/google';
 
+
 const karla = Karla({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
+  weight: ["400", "500", "600", "700"], // optional, add the weights you need
   variable: "--font-karla",
 });
 

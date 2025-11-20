@@ -4,8 +4,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
+        sans: ["var(--font-karla)"],
         // serif: ["var(--font-spectral)"],
-        sans: ["var(--font-karla)", "sans-serif"],
+        // sans: ["var(--font-inter)"],
         // stack: ["'Stack Sans Text'", "sans-serif"],
       },
       colors: {
