@@ -7,7 +7,7 @@ export default function Martian() {
       subtitle="Description"
       timeline="Start – End"
       contributors={["Ethan Sie"]}
-      techStack={["skills"]}
+      techStack={[]}
       description={`
 This blah blah blah
 
@@ -24,6 +24,7 @@ This was blah blah
       githubUrl=""
       demoUrl=""
       videoUrl=""
+      pdfView="https://vgatltf8hagpubgw.public.blob.vercel-storage.com/Exploring%20Blended%20Wing%20Body%20Aircraft%20for%20Mars%20Exploration_%20A%20Multidisciplinary%20Design%20and%20Analysis.pdfs"
     />
   );
 }

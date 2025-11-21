@@ -4,22 +4,24 @@ export default function IMMC2025() {
   return (
     <TemplatePage
       title="International Mathematical Modeling Challenge 2025"
-      subtitle="Description"
-      timeline="2025"
+      subtitle="Global Volleyball League Optimization: MILP Scheduling & Markov Chain Competitive Modeling"
+      timeline="2025 | 5 Day Competition"
       contributors={["Ethan Sie", "Ethan Sharma", "Ryan Park", "Jackie Zeng"]}
-      techStack={[]}
+      techStack={["GeoPy", "NumPy","Pandas", "Seaborn", "PuLP"]}
       description={`
-This blah blah blah
+Developed an optimized 20-team global sports-league schedule balancing fairness, travel efficiency, and competitive quality. Used mixed-integer linear programming (MILP) to generate matchups and season timing, and applied Markov Chain analysis to evaluate matchup fairness. Built metrics for effectivity and attractiveness, then ran Monte Carlo simulations to compare knockout, Swiss, and round-robin formats. Extended the model to a 24-team league with optimized opponent counts.
 
-Features:
-- blah
-- blah
-- blah
-
-This was blah blah
+Concepts Applied:
+- Mixed-Integer Linear Programming (MILP)
+- Graph/network optimization
+- Markov Chains for competitive parity
+- Probability modeling for match outcomes
+- Optimization under constraints (rest time, travel distance)
+- Monte Carlo simulation
+- Ranking/effectivity statistical metrics
       `}
       images={[
-        ""
+        
       ]}
       githubUrl=""
       demoUrl=""

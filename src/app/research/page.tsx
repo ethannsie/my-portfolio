@@ -3,25 +3,31 @@
 import AnimatedProjectCard from "../../components/AnimatedProjectCard";
 import { motion } from "framer-motion";
 
-export default function ProjectsPage() {
+export default function ResearchPage() {
   const projects = [
     {
       title: "Thermofluidics and Surface Nanoengineering",
       description: "Currently working on self-cleaning coatings at MTSN Lab @ UC Berkeley.",
       href: "/research/mtsn",
-      image: "/images/research/markov/markov4.png",
+      image: "/images/research/mtsn.png",
+    },
+    {
+        title: "Exploring Pulse Shaping Techniques",
+        description: "Maintaining the Fidelity of X and CX Gates within a Quantum Algorithm",
+        href: "/research/quantum",
+        image: "/images/research/quantum.png",
     },
     {
       title: "Martian Flyer Exploration",
       description: "A study into viable flyers on Mars and design analysis.",
       href: "/research/martian",
-      image: "/images/research/markov/markov4.png",
+      image: "/images/research/martian.png",
     },
     {
-      title: "CubeSAT",
-      description: "Design and deployment of a low cost CubeSAT",
+      title: "CubeSat Exploration",
+      description: "Developing and Testing a 1U CubeSat using COTS Hardware ",
       href: "/research/cubesat",
-      image: "/images/research/markov/markov4.png",
+      image: "/images/research/cubesat.png",
     },
   ];
 
@@ -29,7 +35,7 @@ export default function ProjectsPage() {
     <div className="px-6 py-20 bg-brand-navy_blue">
       {/* Title Animation */}
       <motion.h1
-        className="text-8xl font-extrabold text-center mb-4 text-brand-white"
+        className="text-8xl font-extrabold text-center mb-4 text-brand-orange"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.9 }}

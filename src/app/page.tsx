@@ -52,7 +52,6 @@ export default function Home() {
 
           <a
             href="/research"
-            target="_blank"
             className="px-6 py-3 border border-brand-orange text-brand-orange rounded-lg text-lg font-semibold 
                        hover:bg-brand-white hover:text-black transition-all hover:-translate-y-1 hover:shadow-xl"
           >
@@ -61,7 +60,6 @@ export default function Home() {
 
           <a
             href="/competitions"
-            target="_blank"
             className="px-6 py-3 border border-brand-orange text-brand-orange rounded-lg text-lg font-semibold 
                        hover:bg-brand-white hover:text-black transition-all hover:-translate-y-1 hover:shadow-xl"
           >

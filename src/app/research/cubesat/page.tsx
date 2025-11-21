@@ -7,7 +7,7 @@ export default function CubeSAT() {
       subtitle="Description"
       timeline="Start – End"
       contributors={["Ethan Sie"]}
-      techStack={["skills"]}
+      techStack={[]}
       description={`
 This blah blah blah
 
@@ -24,6 +24,7 @@ This was blah blah
       githubUrl=""
       demoUrl=""
       videoUrl=""
+      pdfView="https://vgatltf8hagpubgw.public.blob.vercel-storage.com/Developing%20and%20Testing%20a%201U%20CubeSat%20using%20COTS%20Hardware%20%20%281%29.pdf"
     />
   );
 }

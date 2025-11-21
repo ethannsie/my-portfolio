@@ -39,7 +39,7 @@ export default function AnimatedProjectCard({
       <p className="text-gray-600 mt-2 mb-4">{description}</p>
 
       <Link href={href} className="text-sky-600 font-medium">
-        View Project →
+        Click Here to View →
       </Link>
     </motion.div>
   );

@@ -6,8 +6,8 @@ import { motion } from "framer-motion";
 export default function ProjectsPage() {
   const projects = [
     {
-      title: "Circuit Builder Simulation",
-      description: "Interactive GlowScript/VPython environment for circuit logic.",
+      title: "Physics Circuit Builder Simulation",
+      description: "Interactive GlowScript/VPython environment for resistor/emf circuit logic.",
       href: "/projects/circuitBuilder",
       image: "/images/projects/circuitBuilder.png",
     },
@@ -18,10 +18,10 @@ export default function ProjectsPage() {
       image: "/images/projects/markov/markov4.png",
     },
     {
-      title: "FEA Simulation Dashboard",
-      description: "A dashboard visualizing deformation modes and stresses using Three.js.",
-      href: "/projects/fea-dashboard",
-      image: "/images/projects/fea.png",
+      title: "Physics Sandbox Simulation",
+      description: "An interactive physics-sandbox built in Processing (Java mode) that simulates rigid-body dynamics, collisions, and force interactions.",
+      href: "/projects/physics",
+      image: "/images/projects/physics.png",
     },
   ];
 
@@ -29,7 +29,7 @@ export default function ProjectsPage() {
     <div className="px-6 py-20 bg-brand-navy_blue">
       {/* Title Animation */}
       <motion.h1
-        className="text-8xl font-extrabold text-center mb-4 text-brand-white"
+        className="text-8xl font-extrabold text-center mb-4 text-brand-orange"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.9 }}

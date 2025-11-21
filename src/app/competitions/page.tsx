@@ -7,19 +7,22 @@ export default function CompetitionsPage() {
   const projects = [
     {
       title: "Mathematical Contest in Modeling | 2025",
-      description: "International Winner (Top ~20 out of ~21,000 undergraduates); MAA Award",
+      description: "Olympic Medal Prediction Using Tobit Models, Mixed-Effects Regression, and DBSCAN Clustering",
+      //description: "International Winner (Top ~20 out of ~21,000 undergraduates); MAA Award",
       href: "/competitions/mmc2025",
       image: "/images/competitions/mmc2025.png",
     },
     {
       title: "International Mathematical Modeling Challenge | 2025",
-      description: "Top 3 in the United States",
+      description: "Global Volleyball League Optimization: MILP Scheduling & Markov Chain Competitive Modeling",
+      //description: "Top 3 in the United States",
       href: "/competitions/immc2025",
       image: "/images/competitions/immc2025.png",
     },
     {
       title: "International Mathematical Modeling Challenge | 2024",
-      description: "International Honorable Mention | Top 2 in the United States",
+      description: "Pet Readiness & Retention Modeling Using HR-SPLIT and Stochastic Forecasting",
+      //description: "International Honorable Mention | Top 2 in the United States",
       href: "/competitions/immc2024",
       image: "/images/competitions/immc2024.png",
     },
@@ -29,7 +32,7 @@ export default function CompetitionsPage() {
     <div className="px-6 py-20 bg-brand-navy_blue">
       {/* Title Animation */}
       <motion.h1
-        className="text-8xl font-extrabold text-center mb-4 text-brand-white"
+        className="text-8xl font-extrabold text-center mb-4 text-brand-orange"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.9 }}
