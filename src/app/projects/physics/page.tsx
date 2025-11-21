@@ -1,4 +1,5 @@
 import TemplatePage from "../../../components/TemplatePage";
+import Link from "next/link";
 
 export default function PhysicsSandbox() {
   return (
@@ -14,55 +15,28 @@ export default function PhysicsSandbox() {
         "HTML/CSS",
         "Physics Simulation",
       ]}
+      description={`This is an interactive p5.js–based physics sandbox that lets users experiment with gravitational systems, collisions, and orbital mechanics in real time. Objects like planets and particles have mass, velocity, and forces applied to them, allowing for realistic motion and dynamic interactions.
 
-      description={`
-This project is an interactive physics sandbox built from scratch in Processing (Java mode). 
-The original version implemented a custom physics engine, object structures, collision logic, 
-and rendering pipeline. To make the experience browser-accessible, I later ported the system 
-to JavaScript using p5.js so it can run live on the web.
-
-### 🔧 What It Does
-Users can:
-- spawn, drag, and interact with simulated objects
-- visualize forces, velocities, and physical responses
-- explore rigid-body dynamics inside an open, interactive sandbox
-
-### 🛠 My Role
-- **Created the entire physics engine in Processing (Java)**, including:
-  - body structures (position, velocity, acceleration, mass)
-  - force application and integration logic
-  - motion updates using numerical methods
-  - collision behavior and state management
-  - rendering pipeline and user interaction system
-- **Ported the full system to JavaScript (p5.js)** for browser-based execution
-- Reworked Processing-specific features into JS equivalents (vectors, loops, input events)
-- Optimized the draw loop and physics timestep for web performance
-- Designed this project page to host, document, and showcase the live simulation
-
-### 📐 Technical Details
-- **Rendering:** p5.js draw loop (60fps target)
-- **Integration Method:** Euler method with adjustable delta-t
-- **Simulation Features:** forces, drag interactions, body updates, boundary handling
-- **Developer Tools:** Chrome DevTools, VS Code, GitHub
-
-### 🧪 Result
-The simulation now runs natively in the browser.  
-Below is a live demo powered entirely by the JavaScript port of the original Processing program.
-
-Scroll to interact with the simulation.
-      `}
-
+Users can create, move, or delete objects, adjust orbits, and observe real-time metrics such as velocities, distances, and gravitational forces. The simulation features modular classes for bodies, collision detection, and force calculations, ensuring accurate physics while maintaining performance.`}
       images={[
         "/images/projects/physics/physics1.png",
         "/images/projects/physics/physics2.png",
         "/images/projects/physics/physics3.png",
       ]}
-
-      githubUrl="https://github.com/ethannsie/p00-physics-ethan_richie"
-
-      demoUrl="/projects/physics-sandbox/demo/index.html"
-
+      githubUrl="https://github.com/ethannsie/physics-sandbox-simulation"
+      demoUrl=""
       videoUrl=""
-    />
+    >
+      {/* Add a button linking to the live demo page */}
+      <div style={{ textAlign: "left", marginTop: "2rem", marginBottom: "2rem"}}>
+        <Link href="/projects/physics/demo">
+          <button className="px-6 py-3 border border-brand-orange text-brand-orange rounded-lg text-lg font-semibold 
+                       hover:bg-brand-white hover:text-black transition-all hover:-translate-y-1 hover:shadow-xl"
+          >
+            View Live Demo
+          </button>
+        </Link>
+      </div>
+    </TemplatePage>
   );
 }

@@ -13,6 +13,7 @@ interface ProjectPageProps {
   demoUrl?: string;
   pdfView?: string;
   extraButton?: { label: string; url: string };
+  children?: React.ReactNode;
 }
 
 export default function TemplatePage({
@@ -28,6 +29,7 @@ export default function TemplatePage({
   demoUrl,
   extraButton,
   pdfView,
+  children,
 }: ProjectPageProps) {
   return (
     <div className="w-full min-h-screen py-20 px-6 md:px-16 bg-brand-navy_blue text-brand-white">
@@ -35,7 +37,7 @@ export default function TemplatePage({
 
         {/* TITLE + GITHUB ICON */}
         <div className="flex items-center gap-4 mb-4">
-          <h1 className="text-4xl md:text-6xl font-bold">{title}</h1>
+          <h1 className="text-4xl md:text-6xl font-bold text-brand-orange">{title}</h1>
 
           {githubUrl && (
             <a href={githubUrl} target="_blank" rel="noopener noreferrer">
@@ -52,10 +54,13 @@ export default function TemplatePage({
 
         {/* SUBTITLE */}
         {subtitle && (
-          <p className="text-xl md:text-2xl font-light mb-8 text-brand-pink">
+          <p className="text-xl md:text-2xl font-regular mb-8 text-brand-pink">
             {subtitle}
           </p>
         )}
+
+
+        {children}
 
         {/* META */}
         <div className="flex flex-col gap-2 mb-10 text-brand-pink">
@@ -81,7 +86,7 @@ export default function TemplatePage({
         {/* DESCRIPTION */}
         {description && (
           <section className="mb-16">
-            <h2 className="text-3xl font-semibold mb-4">Overview</h2>
+            <h2 className="text-3xl font-semibold mb-4 text-brand-orange">Overview</h2>
             <p className="text-lg leading-8 font-light text-brand-pink whitespace-pre-line">
               {description}
             </p>
@@ -154,6 +159,7 @@ export default function TemplatePage({
             </div>
           </section>
         )}
+
       </div>
     </div>
   );

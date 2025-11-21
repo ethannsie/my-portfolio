@@ -22,12 +22,12 @@ export default function Home() {
 
         {/* Tagline */}
         <motion.div
-          className="text-xl text-brand-orange max-w-2xl"
+          className="text-xl text-brand-white max-w-2xl"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3, duration: 1 }}
         >
-          <div className="text-3xl">
+          <div className="text-3xl text-brand-orange">
           Mechanical Engineer     ×     Software Engineer  
           </div>
           <br />

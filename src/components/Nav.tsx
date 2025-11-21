@@ -59,7 +59,7 @@ export default function Nav() {
           <Link href="/research" className="hover:text-brand-light_blue text-brand-white">Research</Link>
           <Link href="/about" className="hover:text-brand-light_blue text-brand-white">About</Link>
           <Link href="/resume" className="hover:text-brand-light_blue text-brand-white">Resume</Link>
-          <a href="#contact" className="hover:text-brand-light_blue text-brand-white">Contact</a>
+          <a href="/about#contact" className="hover:text-brand-light_blue text-brand-white">Contact</a>
         </div>
 
         {/* MOBILE MENU */}

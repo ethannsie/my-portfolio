@@ -3,24 +3,13 @@ import TemplatePage from "../../../components/TemplatePage";
 export default function CubeSAT() {
   return (
     <TemplatePage
-      title="Title"
-      subtitle="Description"
-      timeline="Start – End"
+      title="CubeSat Exploration"
+      subtitle="Developing and Testing a 1U CubeSat using COTS Hardware"
+      timeline="Jun 2022 – Sep 2022"
       contributors={["Ethan Sie"]}
       techStack={[]}
-      description={`
-This blah blah blah
-
-Features:
-- blah
-- blah
-- blah
-
-This was blah blah
-      `}
-      images={[
-        ""
-      ]}
+      description={``}
+      images={[]}
       githubUrl=""
       demoUrl=""
       videoUrl=""

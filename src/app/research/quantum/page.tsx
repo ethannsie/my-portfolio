@@ -3,25 +3,13 @@ import TemplatePage from "../../../components/TemplatePage";
 export default function Quantum() {
   return (
     <TemplatePage
-      title="Exploring Pulse Shaping Techniques to Maintain the Fidelity of X and
-CX Gates within a Quantum Algorithm"
-      subtitle="Description"
-      timeline="2023"
+      title="Exploring Pulse Shaping Techniques"
+      subtitle="Maintaining the Fidelity of X and CX Gates within a Quantum Algorithm"
+      timeline="Feb 2023 - Sep 2023"
       contributors={["Ethan Sie"]}
       techStack={[]}
-      description={`
-This blah blah blah
-
-Features:
-- blah
-- blah
-- blah
-
-This was blah blah
-      `}
-      images={[
-        ""
-      ]}
+      description={""}
+      images={[]}
       githubUrl=""
       demoUrl=""
       videoUrl=""

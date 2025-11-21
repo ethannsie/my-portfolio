@@ -9,7 +9,6 @@ export default function ResearchPage() {
       title: "Thermofluidics and Surface Nanoengineering",
       description: "Currently working on self-cleaning coatings at MTSN Lab @ UC Berkeley.",
       href: "/research/mtsn",
-      image: "/images/research/mtsn.png",
     },
     {
         title: "Exploring Pulse Shaping Techniques",
@@ -25,7 +24,7 @@ export default function ResearchPage() {
     },
     {
       title: "CubeSat Exploration",
-      description: "Developing and Testing a 1U CubeSat using COTS Hardware ",
+      description: "Developing and Testing a 1U CubeSat using COTS Hardware.",
       href: "/research/cubesat",
       image: "/images/research/cubesat.png",
     },

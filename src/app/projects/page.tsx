@@ -9,7 +9,7 @@ export default function ProjectsPage() {
       title: "Physics Circuit Builder Simulation",
       description: "Interactive GlowScript/VPython environment for resistor/emf circuit logic.",
       href: "/projects/circuitBuilder",
-      image: "/images/projects/circuitBuilder.png",
+      image: "/images/projects/circuit/circuit.png",
     },
     {
       title: "Markov Chain Generative Music",
@@ -21,7 +21,7 @@ export default function ProjectsPage() {
       title: "Physics Sandbox Simulation",
       description: "An interactive physics-sandbox built in Processing (Java mode) that simulates rigid-body dynamics, collisions, and force interactions.",
       href: "/projects/physics",
-      image: "/images/projects/physics.png",
+      image: "/images/projects/physics/physics2.png",
     },
   ];
 
