@@ -9,19 +9,19 @@ export default function CompetitionsPage() {
       title: "Mathematical Contest in Modeling | 2025",
       description: "International Winner (Top ~20 out of ~21,000 undergraduates); MAA Award",
       href: "/competitions/mmc2025",
-      image: "/images/projects/circuitBuilder.png",
+      image: "/images/competitions/mmc2025.png",
     },
     {
       title: "International Mathematical Modeling Challenge | 2025",
       description: "Top 3 in the United States",
       href: "/competitions/immc2025",
-      image: "/images/projects/markov/markov4.png",
+      image: "/images/competitions/immc2025.png",
     },
     {
       title: "International Mathematical Modeling Challenge | 2024",
       description: "International Honorable Mention | Top 2 in the United States",
       href: "/competitions/immc2024",
-      image: "/images/projects/fea.png",
+      image: "/images/competitions/immc2024.png",
     },
   ];
 

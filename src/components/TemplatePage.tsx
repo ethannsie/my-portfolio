@@ -11,6 +11,7 @@ interface ProjectPageProps {
   videoUrl?: string;
   githubUrl?: string;
   demoUrl?: string;
+  pdfView?: string;
   extraButton?: { label: string; url: string };
 }
 
@@ -26,6 +27,7 @@ export default function TemplatePage({
   githubUrl,
   demoUrl,
   extraButton,
+  pdfView,
 }: ProjectPageProps) {
   return (
     <div className="w-full min-h-screen py-20 px-6 md:px-16 bg-brand-navy_blue text-brand-white">
@@ -86,6 +88,17 @@ export default function TemplatePage({
           </section>
         )}
 
+        {/* PDF Display */}
+        {pdfView  && (
+          <section className="mb-16">
+              <div className="w-full h-screen">
+      <iframe
+        src={pdfView}
+        className="w-full h-full"
+      />
+    </div>
+          </section>
+        )}
         {/* GALLERY */}
         {images && images.length > 0 && (
           <section className="mb-16">
