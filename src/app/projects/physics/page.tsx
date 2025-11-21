@@ -22,6 +22,10 @@ Users can create, move, or delete objects, adjust orbits, and observe real-time 
         "/images/projects/physics/physics1.png",
         "/images/projects/physics/physics2.png",
         "/images/projects/physics/physics3.png",
+        "/images/projects/physics/physics4.jpg",
+        "/images/projects/physics/physics5.jpg",
+        "/images/projects/physics/physics6.jpg",
+        "/images/projects/physics/physics7.jpg",
       ]}
       githubUrl="https://github.com/ethannsie/physics-sandbox-simulation"
       demoUrl=""
